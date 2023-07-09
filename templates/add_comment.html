@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add Comment</title>
+</head>
+
+<body>
+    <form action="/add_comment" method="POST">
+        <label for="comment">Comment:</label>
+        <input type="text" name="comment" required><br>
+
+        <label for="type">Type:</label>
+        <select name="type" id="type">
+            <option value="positive">Positive</option>
+            <option value="negative">Negative</option>
+        </select>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>

@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html>
+<style>
+table, th, td {
+    border: 1px solid black;
+}
+</style>
 <head>
 <title>Comments</title>
 </head>
 
 <body>
     <h1>All Comments</h1>
-    <table>
+    <table style="width:300px">
+        <tr>
+            <th>Comment</th>
+            <th>Type</th>
+        </tr>
         {% for comment in comments %}
         <tr>
             <td> {{ comment.text }} </td>
-            <td> {{ comment.type }}</td>
+            <td> {{ comment.type }} </td>
         </tr>
         {% endfor %}
     </table>
